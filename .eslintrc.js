@@ -15,5 +15,7 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'no-undef': 0,
     'prettier/prettier': 0,
+    'import/no-extraneous-dependencies': 0,
+    'linebreak-style': 0,
   },
 };
