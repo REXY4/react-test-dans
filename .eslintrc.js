@@ -17,5 +17,7 @@ module.exports = {
     'prettier/prettier': 0,
     'import/no-extraneous-dependencies': 0,
     'linebreak-style': 0,
+    'arrow-body-style': 0,
+    'react/function-component-definition': 0,
   },
 };

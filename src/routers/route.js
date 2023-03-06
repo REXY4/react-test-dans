@@ -1,7 +1,9 @@
+import MainView from '../views/Main.view';
+
 const defenition = [
   {
     path: '/',
-    element: <div>Hallo home</div>,
+    element: <MainView />,
   },
 ];
 

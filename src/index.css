@@ -1,0 +1,12 @@
+@font-face {
+  font-family: roboto;
+  src: url(../src/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+#root {
+  font-family: roboto;
+}
