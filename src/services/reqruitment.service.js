@@ -9,9 +9,7 @@ const getAll = async (data) => {
       Authorization: `Bearer ${localStorage.token}`
     }
   };
-  const {
-    description, location, full_time, page
-  } = data;
+  const { description, location, full_time, page } = data;
   const des = description === '' ? '' : `description=${description}`;
   const loc = location === '' ? '' : `location=${location}`;
   const pag = page === '' ? '' : `page=${page}`;

@@ -24,6 +24,8 @@ module.exports = {
     'react/prop-types': 0,
     'no-shadow': 0,
     'import/prefer-default-export': 0,
-    'react/jsx-props-no-spreading': 0
+    'react/jsx-props-no-spreading': 0,
+    'object-curly-newline': 0,
+    'react/jsx-one-expression-per-line': 0
   }
 };
