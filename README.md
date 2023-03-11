@@ -23,3 +23,10 @@ ubah .env-example ke .env
 ```
 npm start
 ```
+
+account login
+email : rizki@gmail.com
+password : 123456
+
+email: jhondoe@gmail.com
+password : 123456
