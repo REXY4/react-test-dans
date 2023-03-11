@@ -2,3 +2,12 @@
   background-color: #3e54ac;
   width: 100%;
 }
+
+.button-link {
+  color: #3e54ac;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  opacity: 0.6;
+}

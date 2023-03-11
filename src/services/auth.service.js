@@ -17,6 +17,22 @@ const login = async (data) => {
   return response;
 };
 
+const registerUser = async (data) => {
+  const config = {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  const response = Api.post('/user/register', data, config)
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      return err.response.data;
+    });
+  return response;
+};
+
 const check = async (token) => {
   const config = {
     headers: {
@@ -27,4 +43,4 @@ const check = async (token) => {
   const response = await Api.get('/user/check', config);
   return response.data;
 };
-export { login, check };
+export { login, check, registerUser };
