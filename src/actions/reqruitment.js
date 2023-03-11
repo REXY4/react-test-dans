@@ -15,8 +15,6 @@ const getAllData = (data) => async (dispatch) => {
 
 const getDetail = (id, navigate) => async (dispatch) => {
   const response = await getDetails(id);
-  console.log('click');
-  console.log(response);
   if (response.statusCode === 400) {
     //
   } else if (response.statusCode === 200) {

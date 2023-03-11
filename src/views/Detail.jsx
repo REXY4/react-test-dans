@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 // import Logo from '../assets/image/GitHub_Logo.png';
 
 const Detail = ({ detail }) => {
-  console.log(detail);
   return (
     <Container>
       <Row className="mt-5">
