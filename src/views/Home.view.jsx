@@ -1,10 +1,11 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable react/no-array-index-key */
 import { useEffect, useState } from 'react';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
-import { Col, Container, Row, Form, Card } from 'react-bootstrap';
+import { Col, Container, Row, Form, Card, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import FormFilter from '../components/FormFilter';
 import { getAllData, getDetail } from '../actions/reqruitment';
@@ -24,10 +25,12 @@ const Home = ({ getAllData, req, getDetail }) => {
       [e.target.name]: e.target.name === 'full_time' ? e.target.checked : e.target.value
     });
   };
-
-  useEffect(() => {
+  const onSubmit = () => {
     getAllData(form);
-  }, [form]);
+  };
+  useEffect(() => {
+    getAllData();
+  }, []);
 
   return (
     <Container>
@@ -56,6 +59,9 @@ const Home = ({ getAllData, req, getDetail }) => {
             name="full_time"
             onChange={(e) => onChange(e)}
           />
+        </Col>
+        <Col md={2}>
+          <Button onClick={onSubmit}>Search</Button>
         </Col>
       </Row>
       <Row className="mt-5">
